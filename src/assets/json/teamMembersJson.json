@@ -1,0 +1,114 @@
+[
+	{
+		"teamMemberName": "Sladjana Miljanovic",
+		"username": "sladjanamiljanovic@t.m",
+		"status": true,
+		"hoursPerWeek": 32,
+		"email": "s.miljanovic@vegait.rs",
+		"role": true
+	},
+	{
+		"teamMemberName": "Aphrodite Newman",
+		"username": "aphroditenewman@t.m",
+		"status": false,
+		"hoursPerWeek": 5,
+		"email": "a.newman@vegait.rs",
+		"role": true
+	},
+	{
+		"teamMemberName": "Kibo Mendoza",
+		"username": "kibomendoza@t.m",
+		"status": false,
+		"hoursPerWeek": 24,
+		"email": "k.mendoza@vegait.rs",
+		"role": false
+	},
+	{
+		"teamMemberName": "Jorden Mclaughlin",
+		"username": "jordenmclaughlin@t.m",
+		"status": true,
+		"hoursPerWeek": 14,
+		"email": "j.mclaughlin7754@vegait.rs",
+		"role": false
+	},
+	{
+		"teamMemberName": "Vivian Webb",
+		"username": "vivianwebb@t.m",
+		"status": true,
+		"hoursPerWeek": 22,
+		"email": "v.webb@vegait.rs",
+		"role": false
+	},
+	{
+		"teamMemberName": "Cyrus Guerra",
+		"username": "cyrusguerra@t.m",
+		"status": true,
+		"hoursPerWeek": 24,
+		"email": "c.guerra@vegait.rs",
+		"role": true
+	},
+	{
+		"teamMemberName": "McKenzie Koch",
+		"username": "mckenziekoch@t.m",
+		"status": false,
+		"hoursPerWeek": 33,
+		"email": "mk.koch@vegait.rs",
+		"role": false
+	},
+	{
+		"teamMemberName": "Elvis Blackwell",
+		"username": "elvisblackwell@t.m",
+		"status": true,
+		"hoursPerWeek": 26,
+		"email": "e.blackwell@vegait.rs",
+		"role": false
+	},
+	{
+		"teamMemberName": "Libby Diaz",
+		"username": "libbydiaz@t.m",
+		"status": false,
+		"hoursPerWeek": 39,
+		"email": "l.diaz@vegait.rs",
+		"role": false
+	},
+	{
+		"teamMemberName": "Amber Ramsey",
+		"username": "amberramsey@t.m",
+		"status": true,
+		"hoursPerWeek": 17,
+		"email": "a.ramsey@vegait.rs",
+		"role": false
+	},
+	{
+		"teamMemberName": "Brenna Shields",
+		"username": "brennashields@t.m",
+		"status": false,
+		"hoursPerWeek": 18,
+		"email": "b.shields@vegait.rs",
+		"role": true
+	},
+	{
+		"teamMemberName": "Rashad Whitley",
+		"username": "rashadwhitley@t.m",
+		"status": false,
+		"hoursPerWeek": 33,
+		"email": "r.whitley@vegait.rs",
+		"role": false
+	},
+	{
+		"teamMemberName": "Susan Davis",
+		"username": "susandavis@t.m",
+		"status": true,
+		"hoursPerWeek": 36,
+		"email": "s.davis@vegait.rs",
+		"role": false
+	},
+	{
+		"teamMemberName": "Xyla Delacruz",
+		"username": "xyladelacruz@t.m",
+		"status": true,
+		"hoursPerWeek": 37,
+		"email": "x.delacruz@vegait.rs",
+		"role": true
+	}
+]

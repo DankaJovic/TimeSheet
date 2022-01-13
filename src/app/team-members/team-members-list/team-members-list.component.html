@@ -1,8 +1,22 @@
 <div class="accordion-wrap">
-    <div class="item">
+    <div class="item" *ngFor="let item of teamMembers | slice: (curPage * pageSize) - pageSize :curPage * pageSize">
         <div class="heading">
-            <span></span>
+            <span>{{ item.teamMemberName }}</span>
             <i>+</i>
         </div>
     </div>
+</div>
+
+<div class="pagination">
+    <ul>
+        <li *ngIf="curPage > 1" [attr.disabled]="curPage == 1" (click)="curPage = curPage - 1">
+            <a href="javascript:;">Prev</a>
+        </li>
+        <li>
+            <a href="javascript:;">{{curPage}}</a>
+        </li>
+        <li class="last" [attr.disabled]="curPage >= teamMembers.length/pageSize" (click)="curPage = curPage + 1">
+            <a href="javascript:;">Next</a>
+        </li>
+    </ul>
 </div>

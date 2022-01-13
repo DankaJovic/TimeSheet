@@ -1,0 +1,128 @@
+[
+    {
+       "clientName": "ADAM Software NV",
+       "postalZip": "9051",
+       "address": "Kortrijksesteenweg 1108a Ghent",
+       "country": "Belgium"
+    },
+    {
+        "clientName": "Clockwork",
+        "postalZip": "NE29 0NG",
+        "address": "9b Cleveland Road, North Shields",
+        "country": "United Kingdom"
+     },
+     {
+        "clientName": "Emperor Design",
+        "postalZip": "127872",
+        "address": "Office 1601, 48 Burj Gate, Sheikh Zayed Road",
+        "country": " Dubai, UAE"
+     },
+     {
+		"clientName": "Lorem Incorporated",
+		"postalZip": "2974",
+		"address": "P.O. Box 962, 4164 Aliquam, Rd.",
+		"country": "Brazil"
+	},
+	{
+		"clientName": "Nonummy Fusce Fermentum Associates",
+		"postalZip": "5578",
+		"address": "P.O. Box 615, 5423 Phasellus Av.",
+		"country": "China"
+	},
+	{
+		"clientName": "Condimentum Donec Associates",
+		"postalZip": "7775",
+		"address": "P.O. Box 646, 5524 Neque Road",
+		"country": "Norway"
+	},
+	{
+		"clientName": "Et Eros Foundation",
+		"postalZip": "541333",
+		"address": "398-4524 Lectus Avenue",
+		"country": "France"
+	},
+	{
+		"clientName": "Enim Condimentum LLC",
+		"postalZip": "23581-172",
+		"address": "2316 Purus Street",
+		"country": "South Korea"
+	},
+	{
+		"clientName": "Dolor Sit Foundation",
+		"postalZip": "66270",
+		"address": "Ap #456-3935 Elit. St.",
+		"country": "Peru"
+	},
+	{
+		"clientName": "Nulla Eget Ltd",
+		"postalZip": "50719",
+		"address": "168-686 Varius St.",
+		"country": "Australia"
+	},
+	{
+		"clientName": "Vulputate Posuere Vulputate LLC",
+		"postalZip": "77311",
+		"address": "Ap #487-6421 Lobortis St.",
+		"country": "Sweden"
+	},
+	{
+		"clientName": "Elit Etiam Laoreet Corporation",
+		"postalZip": "30910",
+		"address": "Ap #123-1231 Nibh. St.",
+		"country": "Norway"
+	},
+	{
+		"clientName": "Ac Eleifend Vitae LLC",
+		"postalZip": "47311",
+		"address": "8707 Pharetra, St.",
+		"country": "Poland"
+	},
+	{
+		"clientName": "Aptent Consulting",
+		"postalZip": "118145",
+		"address": "795-4339 Non Rd.",
+		"country": "Italy"
+	},
+	{
+		"clientName": "Integer Incorporated",
+		"postalZip": "85618",
+		"address": "Ap #520-1556 Nibh. Road",
+		"country": "Canada"
+	},
+	{
+		"clientName": "Faucibus Leo Limited",
+		"postalZip": "8413",
+		"address": "Ap #766-7902 Metus St.",
+		"country": "Belgium"
+	},
+	{
+		"clientName": "In Faucibus Consulting",
+		"postalZip": "5058",
+		"address": "Ap #213-8290 Pede. Rd.",
+		"country": "Peru"
+	},
+	{
+		"clientName": "Integer Corporation",
+		"postalZip": "302034",
+		"address": "P.O. Box 769, 2167 Vulputate, St.",
+		"country": "Spain"
+	},
+	{
+		"clientName": "Diam Inc.",
+		"postalZip": "7950",
+		"address": "388-108 Arcu. Rd.",
+		"country": "China"
+	},
+	{
+		"clientName": "Adipiscing Fringilla Incorporated",
+		"postalZip": "11306",
+		"address": "P.O. Box 899, 8950 Integer Avenue",
+		"country": "Indonesia"
+	},
+	{
+		"clientName": "Ultrices Mauris Industries",
+		"postalZip": "7554 HW",
+		"address": "1087 Vitae, Avenue",
+		"country": "South Korea"
+	}
+]

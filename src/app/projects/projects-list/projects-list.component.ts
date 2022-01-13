@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectsService } from 'src/app/services/projects.service';
+
+import projectsJson from '../../../assets/json/projectsJson.json';
 
 @Component({
   selector: 'tsh-projects-list',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsListComponent implements OnInit {
 
-  constructor() { }
+  projects: { projectName: string, description: string, customer: string, leadName: string }[] = projectsJson;
+
+  curPage: number = 1;
+  pageSize: number = 3;
+
+
+  constructor(private _Projects: ProjectsService) { }
 
   ngOnInit(): void {
+  
+  }
+
+  numberOfPages() {
+    return Math.ceil(this.projects.length / this.pageSize)
   }
 
 }
