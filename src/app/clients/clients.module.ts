@@ -6,6 +6,7 @@ import { ClientsHomeComponent } from './clients-home/clients-home.component';
 import { SharedModule } from '../shared/shared.module';
 import { ClientsModalComponent } from './clients-modal/clients-modal.component';
 import { ClientsListComponent } from './clients-list/clients-list.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ClientsListComponent } from './clients-list/clients-list.component';
   imports: [
     CommonModule,
     ClientsRoutingModule,
-    SharedModule
+    SharedModule,
+    NgbModule,
   ],
   exports: []
 })

@@ -7,14 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlphabetOrderComponent implements OnInit {
 
-  firstLetter: string = '';
-
-  message: string = "";
-
-  constructor() { }
-
   
-
+  constructor() { }
+  
   ngOnInit(): void {
   }
 
