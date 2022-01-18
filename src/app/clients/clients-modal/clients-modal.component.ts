@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-clients-modal',
   templateUrl: './clients-modal.component.html',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientsModalComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
 
 }

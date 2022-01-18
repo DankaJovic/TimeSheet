@@ -1,16 +1,18 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SharedService {
 
-  private messageSource = new BehaviorSubject<string>("default message");
+  private messageSource = new BehaviorSubject("default message");
 
   currentMessage = this.messageSource.asObservable();
 
-  constructor(private sharedService: SharedService) { }
+  private sharedClients = new BehaviorSubject("")
+
+  constructor() { }
 
   changeMesage(message: string){
     this.messageSource.next(message)

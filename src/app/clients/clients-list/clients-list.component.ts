@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Client } from 'src/app/model/client.model';
 import { ClientsService } from 'src/app/services/clients.service';
-import clientsJson from '../../../assets/json/clientsJson.json';
-
-
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'tsh-clients-list',
@@ -17,41 +15,37 @@ export class ClientsListComponent implements OnInit {
 
   alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
-  // clients: { clientName: string, postalZip: number, address: string, country: string }[] = clientsJson;
-
-  // clientsToDisplay: { clientName: string, postalZip: number, address: string, country: string }[] = [];
-
   allClients: Client[] = []
+
+  clientsToDisplay: Client[] = [];
+
+  message: string = "";
   
-  constructor(private _Clients: ClientsService) { }
+  constructor(private _Clients: ClientsService, private _Shared: SharedService) {
+    this._Shared.currentMessage.subscribe(message => this.message = message)
+   }
 
   ngOnInit(): void {
     this.getAllClients()
+    
+    this._Shared.currentMessage.subscribe(message => this.message = message)
   }
 
   numberOfPages() {
     return Math.ceil(this.allClients.length / this.pageSize)
   }
 
-  // initializeClients(){
-  //   this.clientsToDisplay = this.clients;
-  // }
-
-  // onLetterClick(letter: string){
-  //   this.clientsToDisplay = [];
-
-  //   for(let i = 0; i < this.clients.length; i++) {
-  //     let firstLetter = this.clients[i].clientName.charAt(0).toUpperCase();
-  //     if(firstLetter === letter.toUpperCase()){
-  //       this.clientsToDisplay.push(this.clients[i]);
-  //     }
-  //   }
-  // }
-
   getAllClients(){
     this._Clients.getJSON().subscribe(data => {
-      this.allClients = data
+      this.allClients = data;
+      this.clientsToDisplay = this.allClients;
     })
   }
 
+  getFirstLetter(letter:string){
+    let firstLetter = this.allClients.filter(function(projectObj){
+      return projectObj.clientName.charAt(0).toUpperCase() === letter.toUpperCase()
+    })
+    this.clientsToDisplay = firstLetter;
+  }
 }

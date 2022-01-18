@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../services/shared.service';
 
 @Component({
   selector: 'tsh-tsh-cards',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TshCardsComponent implements OnInit {
 
-  constructor() { }
+  message: string = "";
+
+  constructor(private _Shared: SharedService) { }
 
   ngOnInit(): void {
+    this._Shared.currentMessage.subscribe(message => this.message = message)
   }
+
+  newMessage(){
+    this._Shared.changeMesage("Changed")
+  }
+  
 
 }

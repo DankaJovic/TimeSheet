@@ -1,10 +1,10 @@
 <nav>
   <ul class="menu">
     <li>
-      <a href="index.html" class="btn nav active" [routerLink]="['index']" routerLinkActive="active">TimeSheet</a>
+      <a href="index.html" class="btn nav" [routerLink]="['index']" routerLinkActive="active">TimeSheet</a>
     </li>
     <li>
-      <a href="clients.html" class="btn nav" [routerLink]="['clients']" routerLinkActive="active">Clients</a>
+      <a href="clients.html" class="btn nav" [routerLink]="['clients']" routerLinkActive="active" (click)="newMessage()">Clients</a>
     </li>
     <li>
       <a href="projects.html" class="btn nav" [routerLink]="['projects']" routerLinkActive="active">Projects</a>

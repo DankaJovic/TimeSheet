@@ -7,7 +7,7 @@
 </div>
 
 <div class="accordion-wrap projects">
-    <div class="item" *ngFor="let item of allProjects | slice: (curPage * pageSize) - pageSize :curPage * pageSize">
+    <div class="item" *ngFor="let item of projectsToDisplay | slice: (curPage * pageSize) - pageSize :curPage * pageSize">
         <div class="heading">
             <span>{{ item.projectName }} <em>({{ item.customer }})</em></span>
             <i>+</i>
@@ -23,7 +23,7 @@
         <li>
             <a href="javascript:;">{{curPage}}</a>
         </li>
-        <li class="last" [attr.disabled]="curPage >= allProjects.length/pageSize" (click)="curPage = curPage + 1">
+        <li class="last" [attr.disabled]="curPage >= projectsToDisplay.length/pageSize" (click)="curPage = curPage + 1">
             <a href="javascript:;">Next</a>
         </li>
     </ul>

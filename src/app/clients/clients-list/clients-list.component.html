@@ -1,13 +1,13 @@
 <div class="alpha">
     <ul>
         <li *ngFor="let alpha of alphabet" >
-            <a href="javascript:;"> {{alpha}} </a>
+            <a href="javascript:;" (click)="getFirstLetter(alpha)"> {{alpha}} </a>
         </li>
     </ul>
 </div>
 
 <div class="accordion-wrap clients">
-    <div class="item" *ngFor="let item of allClients | slice: (curPage * pageSize) - pageSize :curPage * pageSize">
+    <div class="item" *ngFor="let item of clientsToDisplay | slice: (curPage * pageSize) - pageSize :curPage * pageSize">
         <div class="heading">
             <span>{{ item.clientName }}</span>
             <i>+</i>
@@ -23,8 +23,10 @@
         <li>
             <a href="javascript:;">{{curPage}}</a>
         </li>
-        <li class="last" [attr.disabled]="curPage >= allClients.length/pageSize" (click)="curPage = curPage + 1">
+        <li class="last" [attr.disabled]="curPage >= clientsToDisplay.length/pageSize" (click)="curPage = curPage + 1">
             <a href="javascript:;">Next</a>
         </li>
     </ul>
 </div>
+
+<div>{{message}}</div>
