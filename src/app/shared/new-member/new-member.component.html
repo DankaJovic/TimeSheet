@@ -1,5 +1,5 @@
 <div class="grey-box-wrap reports">
-    <a href="#new-member" class="link new-member-popup"><ng-content></ng-content>
+    <a href="#new-member" class="link new-member-popup" (click)="$event.preventDefault(); openModal()"><ng-content></ng-content>
     </a>
 </div>
 

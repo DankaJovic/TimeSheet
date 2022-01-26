@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Client } from '../model/client.model';
+import { ClientsService } from '../services/clients.service';
 import { SharedService } from '../services/shared.service';
 
 @Component({
@@ -8,17 +10,21 @@ import { SharedService } from '../services/shared.service';
 })
 export class TshCardsComponent implements OnInit {
 
-  message: string = "";
+  clients: Client[] = [];
 
-  constructor(private _Shared: SharedService) { }
+  // message: string = "";
+
+  constructor(private _Clients: ClientsService, private _Shared: SharedService) { }
 
   ngOnInit(): void {
-    this._Shared.currentMessage.subscribe(message => this.message = message)
+    // this._Shared.currentMessage.subscribe(message => this.message = message)
+
   }
 
-  newMessage(){
-    this._Shared.changeMesage("Changed")
+  showClients(){
+    this._Clients.allClients
   }
+
   
 
 }

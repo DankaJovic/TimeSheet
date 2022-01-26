@@ -8,17 +8,30 @@ import { Client } from '../model/client.model';
 })
 export class ClientsService {
 
+  allClients: Client[] = []
+
+  lastId = 23;
+
   constructor(private http: HttpClient) {
-    this.getJSON().subscribe(data => {
-      console.log(data)
+    this.getJSON().subscribe((data:Client[]) => {
+      this.allClients = data;
     })
    }
 
   ngOnInit(): void {
+   this.getJSON()
   }
 
-  public getJSON(): Observable<any> {
-    return this.http.get("./assets/json/clientsJson.json")
+  getJSON(): Observable<any> {
+    console.log("clients service: getjson")
+    return this.http.get("./assets/json/clientsJson.json");
+    // return this.http.get("./assets/json/clientsJson.json");
   }
 
+
+  addClients(newClient: Client){
+    // this.lastId += 1;
+    // newClient._id = this.lastId;
+    // this.allClients.push(newClient); 
+  }
 }

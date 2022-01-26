@@ -17,5 +17,4 @@ export class SharedService {
   changeMesage(message: string){
     this.messageSource.next(message)
   }
-  
 }

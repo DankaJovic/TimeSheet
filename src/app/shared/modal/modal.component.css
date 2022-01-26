@@ -1,0 +1,39 @@
+:host /deep/ .new-member-wrap {
+  display: none !important;
+}
+
+.new-member-inner {
+  width: 450px !important;
+  overflow: auto !important;
+}
+.new-member-inner .form {
+  border-bottom: 1px solid #c0c0c0 !important;
+  padding-bottom: 15px !important;
+  margin: 0 0 15px !important;
+  width: 100% !important;
+}
+.new-member-inner .form input[type=text] {
+  width: 100% !important;
+}
+.new-member-inner .buttons .inner {
+  text-align: center !important;
+}
+in-text,
+.in-pass,
+.in-search {
+  background-color: #fff !important;
+  border: solid 1px #c0c0c0 !important;
+  padding: 0 5px !important;
+  width: 180px !important;
+  height: 28px !important;
+}
+
+.in-text.large {
+  width: 310px !important;
+}
+.in-text.small {
+  width: 100px !important;
+}
+.in-text.xsmall {
+  width: 45px !important;
+}

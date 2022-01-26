@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ClientsModalComponent } from './clients-modal/clients-modal.component';
 import { ClientsListComponent } from './clients-list/clients-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NewMemberComponent } from '../shared/new-member/new-member.component';
 
 
 @NgModule({

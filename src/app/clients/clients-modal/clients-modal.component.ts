@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'app-clients-modal',
+  selector: 'tsh-clients-modal',
   templateUrl: './clients-modal.component.html',
   styleUrls: ['./clients-modal.component.css']
 })

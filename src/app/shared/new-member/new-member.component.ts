@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogConfig} from '@angular/material/dialog';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'tsh-new-member',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewMemberComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog){}
 
   ngOnInit(): void {
   }
+
+  openModal(){
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = false;
+    dialogConfig.autoFocus = true;
+
+    this.dialog.open(ModalComponent, dialogConfig);
+
+    
+  }
+
+
 
 }

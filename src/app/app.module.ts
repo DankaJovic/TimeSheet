@@ -6,10 +6,14 @@ import { FooterComponent } from './core/footer/footer.component';
 import { TshCardsComponent } from './tsh-cards/tsh-cards.component';
 import { HeaderComponent } from './core/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-
+import { ClientsService } from './services/clients.service';
+import { ProjectsService } from './services/projects.service';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalComponent } from './shared/modal/modal.component';
 
 
 @NgModule({
@@ -18,7 +22,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     FooterComponent,
     TshCardsComponent,
     HeaderComponent,
-
+    
   ],
   imports: [
     BrowserModule,
@@ -26,10 +30,14 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     FormsModule,
     HttpClientModule,
     Ng2SearchPipeModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule
     
-
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [ModalComponent],
+  providers: [ClientsService, ProjectsService],
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }
