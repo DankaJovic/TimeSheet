@@ -1,134 +1,72 @@
 [
     {
+		"_id": 1,
 		"projectName": "BuzzMonitor",
 		"description": "Rharetra sed, hendrerit a, arcu. Sed et libero. Proin mi.",
 		"customer": "Nina Media",
 		"leadName": "Wilma Odom"
     },
     {
+		"_id": 2,
 		"projectName": "PWN",
 		"description": "Proin mi. kharetra sed, hendrerit a, arcu. Sed et libero.",
 		"customer": "Clockwork",
 		"leadName": "Wilma Odom"
     },
     {
+		"_id": 3,
 		"projectName": "B&G",
 		"description": "Sed et libero. pharetra sed, hendrerit a, arcu. Proin mi.",
 		"customer": "Cubeworks",
 		"leadName": "Wilma Odom"
 	},
 	{
+		"_id": 4,
 		"projectName": "Neque",
 		"description": "Aharetra sed, hendrerit a, arcu. Sed et libero. Proin mi.",
 		"customer": "Dolor Elit Limited",
 		"leadName": "Wilma Odom"
 	},
 	{
+		"_id": 5,
 		"projectName": "SEM",
 		"description": "Collicitudin commodo ipsum. Suspendisse non leo. Vivamus nibh dolor, nonummy",
 		"customer": "Etiam Foundation",
 		"leadName": "Neil Bird"
 	},
 	{
+		"_id": 6,
 		"projectName": "Eleif",
 		"description": "Pon enim. Mauris quis turpis vitae purus gravida sagittis. Duis",
 		"customer": "Ipsum Ltd",
 		"leadName": "Ivor Meadows"
 	},
 	{
+		"_id": 7,
 		"projectName": "Aenean",
 		"description": "Ec mi eleifend egestas. Sed pharetra, felis eget varius ultrices,",
 		"customer": "Egestas Institute",
 		"leadName": "Britanney Love"
 	},
 	{
+		"_id": 8,
 		"projectName": "NoN",
 		"description": "Hendrerit neque. In ornare sagittis felis. Donec tempor, est ac",
 		"customer": "Fusce Corporation",
 		"leadName": "Denton Landry"
 	},
 	{
+		"_id": 9,
 		"projectName": "Fusce",
 		"description": "Sed nec metus facilisis lorem tristique aliquet. Phasellus fermentum convallis ligula. Donec luctus",
 		"customer": "Vehicula Aliquet Limited",
 		"leadName": "Hayes Shepard"
 	},
 	{
+		"_id": 10,
 		"projectName": "Nonummy",
 		"description": "Morbi non sapien molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam ornare,",
 		"customer": "Nunc Ut Corp.",
 		"leadName": "Talon Moore"
-	},
-	{
-		"projectName": "Cras",
-		"description": "Orci, consectetuer euismod est arcu ac orci. Ut semper pretium neque. Morbi quis",
-		"customer": "Fames Ltd",
-		"leadName": "Amal Dudley"
-	},
-	{
-		"projectName": "Lin",
-		"description": "Malesuada augue ut lacus. Nulla tincidunt, neque vitae semper egestas, urna justo faucibus",
-		"customer": "Nulla Interdum Curabitur Institute",
-		"leadName": "Lael Mcneil"
-	},
-	{
-		"projectName": "Reded",
-		"description": "Vivamus molestie dapibus ligula. Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula.",
-		"customer": "Orci In Corp.",
-		"leadName": "Violet Mccormick"
-	},
-	{
-		"projectName": "Ullamcorper",
-		"description": "Quam dignissim pharetra. Nam ac nulla. In tincidunt congue turpis. In condimentum. Donec",
-		"customer": "A Ultricies Limited",
-		"leadName": "Shannon Ochoa"
-	},
-	{
-		"projectName": "Magna",
-		"description": "Cras eget nisi dictum augue malesuada malesuada. Integer id magna et ipsum cursus",
-		"customer": "Id Risus LLP",
-		"leadName": "Madeson Mercer"
-	},
-	{
-		"projectName": "Hymenaeos",
-		"description": "Vel arcu. Curabitur ut odio vel est tempor bibendum. Donec felis orci, adipiscing",
-		"customer": "Nec Orci Corporation",
-		"leadName": "Devin Mcmillan"
-	},
-	{
-		"projectName": "ASTER",
-		"description": "Sem, vitae aliquam eros turpis non enim. Mauris quis turpis vitae purus gravida",
-		"customer": "Augue Institute",
-		"leadName": "Preston Hyde"
-	},
-	{
-		"projectName": "Purus",
-		"description": "At pretium aliquet, metus urna convallis erat, eget tincidunt dui augue eu tellus.",
-		"customer": "Tristique Corp.",
-		"leadName": "Octavius Gill"
-	},
-	{
-		"projectName": "Lacus,",
-		"description": "Euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam.",
-		"customer": "Nulla Donec Non PC",
-		"leadName": "Azalia Austin"
-	},
-	{
-		"projectName": "Luctus",
-		"description": "Egestas blandit. Nam nulla magna, malesuada vel, convallis in, cursus et, eros. Proin",
-		"customer": "Malesuada Limited",
-		"leadName": "Laith Parker"
-	},
-	{
-		"projectName": "Quisque",
-		"description": "Tristique aliquet. Phasellus fermentum convallis ligula. Donec luctus aliquet odio. Etiam ligula tortor,",
-		"customer": "Facilisis LLC",
-		"leadName": "Lewis Walsh"
-	},
-	{
-		"projectName": "Auctor",
-		"description": "Volutpat ornare, facilisis eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed",
-		"customer": "Eu Augue Porttitor LLC",
-		"leadName": "Gavin Lamb"
 	}
 ]

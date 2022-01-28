@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { CardTitleComponent } from './card-title/card-title.component';
 import { NewMemberComponent } from './new-member/new-member.component';
 import { AlphabetOrderComponent } from './alphabet-order/alphabet-order.component';
-import { PaginationComponent } from './pagination/pagination.component';
 import { SearchMemberComponent } from './search-member/search-member.component';
 import { ModalComponent } from './modal/modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -15,9 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ModalComponent,
     SearchMemberComponent,
     AlphabetOrderComponent,
-    PaginationComponent,
     NewMemberComponent,
-    
   ],
   imports: [
     CommonModule,
@@ -28,7 +25,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     NewMemberComponent,
     SearchMemberComponent,
     AlphabetOrderComponent,
-    PaginationComponent,
     ModalComponent,
     ReactiveFormsModule
   ]

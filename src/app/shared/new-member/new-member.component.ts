@@ -20,10 +20,5 @@ export class NewMemberComponent implements OnInit {
     dialogConfig.autoFocus = true;
 
     this.dialog.open(ModalComponent, dialogConfig);
-
-    
   }
-
-
-
 }

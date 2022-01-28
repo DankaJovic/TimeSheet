@@ -1,7 +1,6 @@
 import { Component, DoCheck, EventEmitter, OnInit, Output } from '@angular/core';
 import { Client } from 'src/app/model/client.model';
 import { ClientsService } from 'src/app/services/clients.service';
-import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'tsh-clients-list',
@@ -10,8 +9,6 @@ import { SharedService } from 'src/app/services/shared.service';
 })
 export class ClientsListComponent implements OnInit{
 
-  prevPage: number = 1;
-  nextPage: number = 1;
   curPage: number = 1;
   pageSize: number = 3;
 
@@ -21,21 +18,16 @@ export class ClientsListComponent implements OnInit{
 
   clientsToDisplay: Client[] = [];
 
-  
-  constructor(private _Clients: ClientsService, private _Shared: SharedService) {
+  constructor(private _Clients: ClientsService) {
    }
 
   ngOnInit(): void {
     this.getAllClients()
-    // this._Shared.currentMessage.subscribe(message => this.message = message)
   }
 
   getAllClients(){
     this.allClients = this._Clients.allClients;
     this.clientsToDisplay = this.allClients;
-    console.log("clients-list: getall");
-      // this.allClients = data;
-    console.log(this.allClients);
   }
 
   numberOfPages() {
@@ -47,5 +39,6 @@ export class ClientsListComponent implements OnInit{
       return projectObj.clientName.charAt(0).toUpperCase() === letter.toUpperCase()
     })
     this.clientsToDisplay = firstLetter;
+
   }
 }

@@ -24,14 +24,13 @@ export class ProjectsListComponent implements OnInit {
     this.getAllProjects()
   }
 
+  getAllProjects(){
+      this.allProjects = this._Projects.allProjects;
+      this.projectsToDisplay = this.allProjects;
+  }
+
   numberOfPages() {
     return Math.ceil(this.allProjects.length / this.pageSize)
-  }
-  getAllProjects(){
-    this._Projects.getJSON().subscribe(data => {
-      this.allProjects = data;
-      this.projectsToDisplay = this.allProjects;
-    })
   }
 
   getFirstLetter(letter:string){

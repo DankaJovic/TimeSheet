@@ -4,6 +4,7 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA} from "@angular/material/dialog";
 import { Client } from 'src/app/model/client.model';
 import { ClientsService } from 'src/app/services/clients.service';
+import { ProjectsService } from 'src/app/services/projects.service';
 
 @Component({
   selector: 'app-modal',
@@ -21,42 +22,29 @@ export class ModalComponent implements OnInit{
 constructor( private _Clients: ClientsService, private fb: FormBuilder,
   private dialogRef: MatDialogRef<ModalComponent>,
   @Inject(MAT_DIALOG_DATA) public data: any) {
-    this.createForm();
+    this.createClientForm();
     
   }
 
 ngOnInit(): void {
 }
 
-createForm(){
+createClientForm(){
   this.registerClientForm = this.fb.group({
-    clientName: '',
-    address: '',
-    city: '',
-    postalZip: '',
-    country: ''
-
+    'clientName': '',
+    'address': '',
+    'city': '',
+    'postalZip': '',
+    'country': ''
   })
 }
 
 onSave(){
-  // this._Clients.getJSON().subscribe(data => {
-  //   this.newClients = data; 
-  // });
-  // this.client = this.registerClientForm.value;
-  // console.log(this.client);
-  // // let newClient = new Client();
-
-  
-
-  console.log("on save radi");
+let submittedClient: Client = new Client(this.registerClientForm.value)
+this._Clients.addClients(submittedClient);
+this.registerClientForm.reset();
 }
 
-
-
-onSubmit(){
-
-}
 
 }
 
